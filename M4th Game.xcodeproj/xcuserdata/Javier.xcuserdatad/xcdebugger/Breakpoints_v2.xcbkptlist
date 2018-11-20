@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "M4th Game/ScoreViewController.swift"
+            timestampString = "562560281.0767699"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "M4th Game/ScoreViewController.swift"
+            timestampString = "562560281.076842"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "SaveScore()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "M4th_Game.ScoreViewController.(SaveScore in _F64EF6188B3AFE264FC96AF69AC4DADE)() -&gt; ()"
+                  moduleName = "M4th Game"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Javier/Documents/XCode%20projects/M4th%20Game/M4th%20Game/ScoreViewController.swift"
+                  timestampString = "557781086.873813"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "2878">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (M4th_Game.Score, M4th_Game.Score) -&gt; Swift.Bool in M4th_Game.ScoreViewController.(SaveScore in _F64EF6188B3AFE264FC96AF69AC4DADE)() -&gt; ()"
+                  moduleName = "M4th Game"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Javier/Documents/XCode%20projects/M4th%20Game/M4th%20Game/ScoreViewController.swift"
+                  timestampString = "557781086.876148"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "M4th Game/PlayViewController.swift"
+            timestampString = "562560281.076894"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
+            landmarkName = "enterResultButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "M4th Game/Classes/masterSegueClass.swift"
+            timestampString = "562524626.1140749"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "perform()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "M4th_Game.masterSegueClass.perform() -&gt; ()"
+                  moduleName = "M4th Game"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Javier/Documents/XCode%20projects/M4th%20Game/M4th%20Game/Classes/masterSegueClass.swift"
+                  timestampString = "559277899.109538"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "557">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "M4th_Game.masterSegueClass.perform() -&gt; ()"
+                  moduleName = "M4th Game"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Javier/Documents/XCode%20projects/M4th%20Game/M4th%20Game/Classes/masterSegueClass.swift"
+                  timestampString = "559277899.111519"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "576">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "M4th Game/Classes/masterSegueClass.swift"
+            timestampString = "562524626.116352"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "perform()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "M4th_Game.masterSegueClass.perform() -&gt; ()"
+                  moduleName = "M4th Game"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Javier/Documents/XCode%20projects/M4th%20Game/M4th%20Game/Classes/masterSegueClass.swift"
+                  timestampString = "559278365.063293"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "557">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "M4th_Game.masterSegueClass.perform() -&gt; ()"
+                  moduleName = "M4th Game"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Javier/Documents/XCode%20projects/M4th%20Game/M4th%20Game/Classes/masterSegueClass.swift"
+                  timestampString = "559278365.066499"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "576">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "M4th Game/ViewController.swift"
+            timestampString = "561345251.40263"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,0 +1,1160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="M4th_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GET-YG-boA" customClass="RoundButton" customModule="M4th_Game" customModuleProvider="target">
+                                <rect key="frame" x="20" y="676" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QdF-yR-08q"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="XJH-9g-5HT"/>
+                                    <constraint firstAttribute="width" constant="100" id="sDx-2d-488"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="11"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Opciones">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rFK-nh-x5i"/>
+                                    <segue destination="zIP-ac-AI7" kind="custom" identifier="UpToDownSegue1" customClass="masterSegueClass" customModule="M4th_Game" customModuleProvider="target" id="wlR-yZ-JL6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fi-NJ-bHU" customClass="RoundButton" customModule="M4th_Game" customModuleProvider="target">
+                                <rect key="frame" x="57" y="228" width="300" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="B6z-QG-e2K">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="150"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="200"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="300" id="Gzu-Mb-P8e">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="150"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="200"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="190"/>
+                                <state key="normal" title="▷">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pie-jd-UEd"/>
+                                    <segue destination="K4c-93-wmX" kind="show" id="Gus-nz-A8e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99r-la-jJU" customClass="RoundButton" customModule="M4th_Game" customModuleProvider="target">
+                                <rect key="frame" x="187" y="676" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="0dO-Xh-Vah"/>
+                                    <constraint firstAttribute="height" constant="40" id="LxL-ft-vFW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="12"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="aboutButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0iI-Ta-BiZ"/>
+                                    <segue destination="xLc-DR-lyf" kind="custom" identifier="UpToDownSegue2" customClass="masterSegueClass" customModule="M4th_Game" customModuleProvider="target" id="kfz-Wq-uhA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EwU-zD-IQB" customClass="RoundButton" customModule="M4th_Game" customModuleProvider="target">
+                                <rect key="frame" x="294" y="676" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1C6-4e-ktS"/>
+                                    <constraint firstAttribute="width" constant="100" id="Fde-cf-qOO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="11"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Puntuaciones">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="scoreButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8DG-te-bV2"/>
+                                    <segue destination="PD6-0v-iGo" kind="custom" identifier="UpToDownSegue3" customClass="masterSegueClass" customModule="M4th_Game" customModuleProvider="target" id="b5Y-F5-6ml"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M4th Ru5h" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4q-X6-esc">
+                                <rect key="frame" x="20" y="40" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="TNn-ke-1ig"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="i4q-X6-esc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="77a-e3-LaQ"/>
+                            <constraint firstItem="3Fi-NJ-bHU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CKY-9n-Oob"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GET-YG-boA" secondAttribute="bottom" constant="20" id="Hny-aj-ZU4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="99r-la-jJU" secondAttribute="bottom" constant="20" id="LDW-zz-mQn"/>
+                            <constraint firstItem="i4q-X6-esc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VKH-GO-sm7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EwU-zD-IQB" secondAttribute="trailing" constant="20" id="X15-EK-UZD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EwU-zD-IQB" secondAttribute="bottom" constant="20" id="Xku-bY-qcb"/>
+                            <constraint firstItem="3Fi-NJ-bHU" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="XnL-OH-U0w"/>
+                            <constraint firstItem="99r-la-jJU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Yzc-P3-rjY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i4q-X6-esc" secondAttribute="trailing" constant="20" id="d4r-Y3-AEt"/>
+                            <constraint firstItem="GET-YG-boA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="km6-vo-MtD"/>
+                            <constraint firstItem="GET-YG-boA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zCY-j9-OBc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GET-YG-boA" secondAttribute="bottom" constant="20" id="zll-uh-VvR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="aboutButton" destination="99r-la-jJU" id="9v6-zi-zdW"/>
+                        <outlet property="optionsButton" destination="GET-YG-boA" id="yDf-hJ-GIk"/>
+                        <outlet property="playButton" destination="3Fi-NJ-bHU" id="53j-Vd-Xrp"/>
+                        <outlet property="scoresButton" destination="EwU-zD-IQB" id="TdU-df-dcT"/>
+                        <outlet property="tittleLabel" destination="i4q-X6-esc" id="juD-jv-Sik"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-227.536231884058" y="-265.17857142857144"/>
+        </scene>
+        <!--Options View Controller-->
+        <scene sceneID="KX4-zA-JDi">
+            <objects>
+                <viewController id="zIP-ac-AI7" customClass="OptionsViewController" customModule="M4th_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="alH-UV-JkF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opciones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="al1-TS-85a">
+                                <rect key="frame" x="132" y="40" width="150.33333333333337" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="G0J-Ij-khM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zIk-WQ-fiR">
+                                <rect key="frame" x="20" y="100" width="374" height="175"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3Ga-Wy-II1">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="28"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dificultad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjm-yy-lhG">
+                                                <rect key="frame" x="0.0" y="2.6666666666666714" width="183" height="23"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZBc-pc-FRd">
+                                                <rect key="frame" x="191" y="0.0" width="183" height="29"/>
+                                                <segments>
+                                                    <segment title="Fácil"/>
+                                                    <segment title="Normal"/>
+                                                    <segment title="Difícil"/>
+                                                </segments>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="changeDifficulty:" destination="zIP-ac-AI7" eventType="valueChanged" id="wgg-ZV-Cq4"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gha-gw-oxU">
+                                        <rect key="frame" x="0.0" y="48" width="374" height="28"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tema" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvm-nd-OH2">
+                                                <rect key="frame" x="0.0" y="2.6666666666666572" width="183" height="23"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MnA-tG-V0b">
+                                                <rect key="frame" x="191" y="0.0" width="183" height="29"/>
+                                                <segments>
+                                                    <segment title="Blanco"/>
+                                                    <segment title="Vainilla"/>
+                                                    <segment title="Rosa"/>
+                                                </segments>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="changeTheme:" destination="zIP-ac-AI7" eventType="valueChanged" id="cKI-JA-hlH"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="b9C-81-LUS">
+                                        <rect key="frame" x="0.0" y="96" width="374" height="28"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idioma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeU-Mw-LXz">
+                                                <rect key="frame" x="0.0" y="2.6666666666666572" width="183" height="23"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="g0C-gP-rWQ">
+                                                <rect key="frame" x="191" y="0.0" width="183" height="29"/>
+                                                <segments>
+                                                    <segment title="Español"/>
+                                                    <segment title="Inglés"/>
+                                                </segments>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="changeLanguage:" destination="zIP-ac-AI7" eventType="valueChanged" id="62X-3T-ACn"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8pi-Fq-2iv">
+                                        <rect key="frame" x="0.0" y="144" width="374" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sonidos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OA-Cx-FFH">
+                                                <rect key="frame" x="0.0" y="4" width="325" height="23"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" alpha="0.55000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4i6-a8-S6Z">
+                                                <rect key="frame" x="325" y="0.0" width="51" height="31"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="onTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="toggleSounds:" destination="zIP-ac-AI7" eventType="valueChanged" id="bMB-vc-Jdu"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kac-sh-MhN" customClass="RoundButton" customModule="M4th_Game" customModuleProvider="target">
+                                <rect key="frame" x="20" y="676" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UrW-K6-cWs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="26"/>
+                                <state key="normal" title="Volver">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backButton:" destination="zIP-ac-AI7" eventType="touchUpInside" id="sUN-tO-OKu"/>
+                                    <segue destination="BYZ-38-t0r" kind="custom" identifier="DownToUpSegue1" customClass="masterSegueClass" customModule="M4th_Game" customModuleProvider="target" id="ibZ-yc-e7m"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ObP-90-Qan" firstAttribute="trailing" secondItem="zIk-WQ-fiR" secondAttribute="trailing" constant="20" id="1Wq-50-vO2"/>
+                            <constraint firstItem="Kac-sh-MhN" firstAttribute="leading" secondItem="ObP-90-Qan" secondAttribute="leading" constant="20" id="ZEo-A8-3lk"/>
+                            <constraint firstItem="al1-TS-85a" firstAttribute="top" secondItem="ObP-90-Qan" secondAttribute="top" constant="20" id="dS4-vo-IBp"/>
+                            <constraint firstItem="zIk-WQ-fiR" firstAttribute="top" secondItem="al1-TS-85a" secondAttribute="bottom" constant="20" id="e2p-JO-TUJ"/>
+                            <constraint firstItem="al1-TS-85a" firstAttribute="centerX" secondItem="ObP-90-Qan" secondAttribute="centerX" id="f0h-8u-QaD"/>
+                            <constraint firstItem="Kac-sh-MhN" firstAttribute="centerX" secondItem="ObP-90-Qan" secondAttribute="centerX" id="oef-9f-vUd"/>
+                            <constraint firstItem="zIk-WQ-fiR" firstAttribute="leading" secondItem="ObP-90-Qan" secondAttribute="leading" constant="20" id="oti-Ek-W24"/>
+                            <constraint firstItem="ObP-90-Qan" firstAttribute="bottom" secondItem="Kac-sh-MhN" secondAttribute="bottom" constant="20" id="vei-pH-9sY"/>
+                            <constraint firstItem="ObP-90-Qan" firstAttribute="trailing" secondItem="Kac-sh-MhN" secondAttribute="trailing" constant="20" id="vrQ-sN-uLU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ObP-90-Qan"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="Kac-sh-MhN" id="DGr-iZ-J7A"/>
+                        <outlet property="difficultySegment" destination="ZBc-pc-FRd" id="FNd-p8-UEY"/>
+                        <outlet property="dificultyLabel" destination="zjm-yy-lhG" id="71D-8B-gvE"/>
+                        <outlet property="languageLabel" destination="VeU-Mw-LXz" id="gjB-yR-OfE"/>
+                        <outlet property="languageSegment" destination="g0C-gP-rWQ" id="Htl-up-Z92"/>
+                        <outlet property="soundLabel" destination="6OA-Cx-FFH" id="I71-Fy-7Qc"/>
+                        <outlet property="soundSwitch" destination="4i6-a8-S6Z" id="0v3-pu-M1D"/>
+                        <outlet property="themeLabel" destination="wvm-nd-OH2" id="cBz-QC-CZd"/>
+                        <outlet property="themeSegment" destination="MnA-tG-V0b" id="3rO-1C-uf0"/>
+                        <outlet property="tittleLabel" destination="al1-TS-85a" id="xHg-C6-qQO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a20-vF-E8y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-970" y="709"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="Z7M-VQ-9j2">
+            <objects>
+                <viewController id="xLc-DR-lyf" customClass="AboutViewController" customModule="M4th_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="as0-sq-MT7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acerca de esta aplicación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5D-y3-hpz">
+                                <rect key="frame" x="20" y="40" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xJ4-jU-sRW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="s58-Vc-c0O">
+                                <rect key="frame" x="20" y="120" width="374" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="ali-Zs-ZXK"/>
+                                </constraints>
+                                <string key="text">Developed by: Sartorius Studios. If you liked the app and want to support our job, consider removing ads for a low price using the button below.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOS-NJ-U1r" customClass="RoundButton" customModule="M4th_Game" customModuleProvider="target">
+                                <rect key="frame" x="20" y="676" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="DZZ-9k-msv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <state key="normal" title="Volver">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backButton:" destination="xLc-DR-lyf" eventType="touchUpInside" id="6pd-Pz-h3x"/>
+                                    <segue destination="BYZ-38-t0r" kind="custom" identifier="DownToUpSegue2" customClass="masterSegueClass" customModule="M4th_Game" customModuleProvider="target" id="x4F-yc-3Hx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jta-zg-WEL" customClass="RoundButton" customModule="M4th_Game" customModuleProvider="target">
+                                <rect key="frame" x="40" y="290" width="334" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="DLK-kA-HaI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <state key="normal" title="Remove all ads! (1$)">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KOS-NJ-U1r" firstAttribute="leading" secondItem="AC9-Ii-JMF" secondAttribute="leading" constant="20" id="08X-Zb-3vd"/>
+                            <constraint firstAttribute="trailing" secondItem="q5D-y3-hpz" secondAttribute="trailing" constant="20" id="0L6-DH-acS"/>
+                            <constraint firstItem="s58-Vc-c0O" firstAttribute="top" secondItem="q5D-y3-hpz" secondAttribute="bottom" constant="40" id="6bg-2y-h8u"/>
+                            <constraint firstItem="AC9-Ii-JMF" firstAttribute="trailing" secondItem="KOS-NJ-U1r" secondAttribute="trailing" constant="20" id="I6T-DC-zcj"/>
+                            <constraint firstItem="q5D-y3-hpz" firstAttribute="top" secondItem="AC9-Ii-JMF" secondAttribute="top" constant="20" id="N7T-8M-U3L"/>
+                            <constraint firstItem="s58-Vc-c0O" firstAttribute="centerX" secondItem="AC9-Ii-JMF" secondAttribute="centerX" id="N9u-z7-A1a"/>
+                            <constraint firstItem="AC9-Ii-JMF" firstAttribute="trailing" secondItem="Jta-zg-WEL" secondAttribute="trailing" constant="40" id="Zqy-Vx-4XV"/>
+                            <constraint firstItem="AC9-Ii-JMF" firstAttribute="bottom" secondItem="KOS-NJ-U1r" secondAttribute="bottom" constant="20" id="aLH-ny-v3f"/>
+                            <constraint firstItem="s58-Vc-c0O" firstAttribute="leading" secondItem="AC9-Ii-JMF" secondAttribute="leading" constant="20" id="evG-o6-gTn"/>
+                            <constraint firstItem="q5D-y3-hpz" firstAttribute="leading" secondItem="AC9-Ii-JMF" secondAttribute="leading" constant="20" id="hBr-UC-ChF"/>
+                            <constraint firstItem="Jta-zg-WEL" firstAttribute="top" secondItem="s58-Vc-c0O" secondAttribute="bottom" constant="20" id="o7h-YI-Vpp"/>
+                            <constraint firstItem="AC9-Ii-JMF" firstAttribute="trailing" secondItem="s58-Vc-c0O" secondAttribute="trailing" constant="20" id="pHe-h6-KyI"/>
+                            <constraint firstItem="Jta-zg-WEL" firstAttribute="leading" secondItem="AC9-Ii-JMF" secondAttribute="leading" constant="40" id="wUx-1P-Kdk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AC9-Ii-JMF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Enh-wP-FQu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-246" y="708"/>
+        </scene>
+        <!--Best Scores View Controller-->
+        <scene sceneID="AIp-uP-o7W">
+            <objects>
+                <viewController id="PD6-0v-iGo" customClass="BestScoresViewController" customModule="M4th_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="naC-pG-ZXO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mejores puntuaciones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uC9-wf-a2A">
+                                <rect key="frame" x="20" y="20" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sO7-yY-kaC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pG4-fp-oxh">
+                                <rect key="frame" x="20" y="70" width="374" height="586"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FCR-n0-VRp">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="288"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="5IJ-dg-6Pa">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="288"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="bestScoreCell" rowHeight="30" id="odV-FZ-8PO">
+                                                        <rect key="frame" x="0.0" y="1" width="374" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="odV-FZ-8PO" id="8wo-Zt-M9D">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="29.666666666666668"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </tableViewCellContentView>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="5IJ-dg-6Pa" firstAttribute="leading" secondItem="FCR-n0-VRp" secondAttribute="leading" id="6aX-7Z-yi0"/>
+                                            <constraint firstAttribute="trailing" secondItem="5IJ-dg-6Pa" secondAttribute="trailing" id="6r0-Di-ZTs"/>
+                                            <constraint firstAttribute="bottom" secondItem="5IJ-dg-6Pa" secondAttribute="bottom" id="YMA-r0-VWv"/>
+                                            <constraint firstItem="5IJ-dg-6Pa" firstAttribute="top" secondItem="FCR-n0-VRp" secondAttribute="top" id="kf6-FH-ALp"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FgT-uy-Gcb" customClass="PieChartView" customModule="Charts">
+                                        <rect key="frame" x="0.0" y="298" width="374" height="288"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEe-Y8-1RZ" customClass="RoundButton" customModule="M4th_Game" customModuleProvider="target">
+                                <rect key="frame" x="20" y="676" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HIv-nA-hxv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <state key="normal" title="Volver">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backButton:" destination="PD6-0v-iGo" eventType="touchUpInside" id="Cll-fN-N0Y"/>
+                                    <segue destination="BYZ-38-t0r" kind="custom" identifier="DownToUpSegue3" customClass="masterSegueClass" customModule="M4th_Game" customModuleProvider="target" id="8lc-4o-xDa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uC9-wf-a2A" firstAttribute="top" secondItem="BQw-q7-CH5" secondAttribute="top" id="GQC-tA-NYe"/>
+                            <constraint firstItem="BQw-q7-CH5" firstAttribute="bottom" secondItem="JEe-Y8-1RZ" secondAttribute="bottom" constant="20" id="JSR-km-tph"/>
+                            <constraint firstItem="BQw-q7-CH5" firstAttribute="leading" secondItem="uC9-wf-a2A" secondAttribute="leading" constant="-20" id="Pwl-FC-SPZ"/>
+                            <constraint firstItem="pG4-fp-oxh" firstAttribute="top" secondItem="uC9-wf-a2A" secondAttribute="bottom" constant="20" id="W8x-DS-PCo"/>
+                            <constraint firstItem="pG4-fp-oxh" firstAttribute="leading" secondItem="BQw-q7-CH5" secondAttribute="leading" constant="20" id="XVy-hm-i78"/>
+                            <constraint firstItem="BQw-q7-CH5" firstAttribute="trailing" secondItem="pG4-fp-oxh" secondAttribute="trailing" constant="20" id="nyv-86-A7i"/>
+                            <constraint firstItem="BQw-q7-CH5" firstAttribute="trailing" secondItem="JEe-Y8-1RZ" secondAttribute="trailing" constant="20" id="o9k-3Z-1Uk"/>
+                            <constraint firstItem="BQw-q7-CH5" firstAttribute="leading" secondItem="JEe-Y8-1RZ" secondAttribute="leading" constant="-20" id="txx-UF-CWS"/>
+                            <constraint firstItem="BQw-q7-CH5" firstAttribute="trailing" secondItem="uC9-wf-a2A" secondAttribute="trailing" constant="20" id="tzV-kl-XDg"/>
+                            <constraint firstItem="JEe-Y8-1RZ" firstAttribute="top" secondItem="pG4-fp-oxh" secondAttribute="bottom" constant="20" id="yOx-VK-IgG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BQw-q7-CH5"/>
+                    </view>
+                    <connections>
+                        <outlet property="bestScoresTable" destination="5IJ-dg-6Pa" id="F4W-cx-EQl"/>
+                        <outlet property="mistakeChart" destination="FgT-uy-Gcb" id="Pjm-oN-f9I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Npg-eX-Ew2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="423" y="716"/>
+        </scene>
+        <!--Play View Controller-->
+        <scene sceneID="Teb-dI-6wj">
+            <objects>
+                <viewController id="K4c-93-wmX" customClass="PlayViewController" customModule="M4th_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VoQ-vA-RMo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="U1I-YS-0Zc">
+                                <rect key="frame" x="20" y="40" width="374" height="676"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="CaP-uL-QsH">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Score: 0" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lM0-re-wAS">
+                                                <rect key="frame" x="0.0" y="0.0" width="80.666666666666671" height="40"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urN-gN-6Tc">
+                                                <rect key="frame" x="162.33333333333334" y="0.0" width="49.666666666666657" height="40"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="27"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Rk-8t-dRX">
+                                                <rect key="frame" x="334" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="Tt0-OG-AuX"/>
+                                                    <constraint firstAttribute="height" constant="40" id="tCE-LX-FWG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="25E-wu-c9p"/>
+                                            <constraint firstItem="lM0-re-wAS" firstAttribute="leading" secondItem="CaP-uL-QsH" secondAttribute="leading" id="O57-x9-3Un"/>
+                                            <constraint firstItem="lM0-re-wAS" firstAttribute="top" secondItem="CaP-uL-QsH" secondAttribute="top" id="OhE-KJ-fv8"/>
+                                            <constraint firstItem="1Rk-8t-dRX" firstAttribute="trailing" secondItem="CaP-uL-QsH" secondAttribute="trailing" id="TgK-TS-rob"/>
+                                            <constraint firstItem="urN-gN-6Tc" firstAttribute="centerX" secondItem="CaP-uL-QsH" secondAttribute="centerX" id="gUP-vA-vbE"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="17" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gYj-Tv-7qr">
+                                        <rect key="frame" x="179.66666666666666" y="238" width="15" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="u3o-Hb-MSH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="H91-1j-VTm">
+                                        <rect key="frame" x="0.0" y="476" width="374" height="200"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cq7-I0-hWP">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="43"/>
+                                                <subviews>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3M-iJ-xN0" customClass="RoundButton" customModule="M4th_Game" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="43"/>
+                                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                        <state key="normal" title="0">
+                                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="enterSymbol:" destination="K4c-93-wmX" eventType="touchUpInside" id="Gsq-h0-wk7"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k80-xy-zf9" customClass="RoundButton" customModule="M4th_Game" customModuleProvider="target">
+                                                        <rect key="frame" x="197" y="0.0" width="177" height="43"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="⌫">
+                                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="eraseButton:" destination="K4c-93-wmX" eventType="touchUpInside" id="Kcl-cd-UZg"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sSV-2o-NmW">
+                                                <rect key="frame" x="0.0" y="53" width="374" height="147"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8Sn-fj-2rq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="78.666666666666671" height="147"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HvL-EI-0nx" customClass="RoundButton" customModule="M4th_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="78.666666666666671" height="42.333333333333336"/>
+                                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                                <state key="normal" title="7">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="enterSymbol:" destination="K4c-93-wmX" eventType="touchUpInside" id="Xev-vX-7UL"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTm-BO-lPt" customClass="RoundButton" customModule="M4th_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="52.333333333333371" width="78.666666666666671" height="42.333333333333343"/>
+                                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                                <state key="normal" title="4">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="enterSymbol:" destination="K4c-93-wmX" eventType="touchUpInside" id="vYy-dg-ZIq"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gco-Sj-jRd" customClass="RoundButton" customModule="M4th_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="104.66666666666663" width="78.666666666666671" height="42.333333333333343"/>
+                                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                                <state key="normal" title="3">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="enterSymbol:" destination="K4c-93-wmX" eventType="touchUpInside" id="UYD-MF-PiA"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GWS-KV-Ume">
+                                                        <rect key="frame" x="98.666666666666686" y="0.0" width="78.333333333333314" height="147"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKN-ST-OFo" customClass="RoundButton" customModule="M4th_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="78.333333333333329" height="42.333333333333336"/>
+                                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                                <state key="normal" title="8">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="enterSymbol:" destination="K4c-93-wmX" eventType="touchUpInside" id="rx1-8S-bQS"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gei-Ze-xgQ" customClass="RoundButton" customModule="M4th_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="52.333333333333371" width="78.333333333333329" height="42.333333333333343"/>
+                                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                                <state key="normal" title="5">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="enterSymbol:" destination="K4c-93-wmX" eventType="touchUpInside" id="MdB-4F-XQQ"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPx-AB-gn0" customClass="RoundButton" customModule="M4th_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="104.66666666666663" width="78.333333333333329" height="42.333333333333343"/>
+                                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                                <state key="normal" title="2">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="enterSymbol:" destination="K4c-93-wmX" eventType="touchUpInside" id="gef-ZS-Rob"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cpl-ca-AeV">
+                                                        <rect key="frame" x="197" y="0.0" width="78.666666666666686" height="147"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyD-cd-ahL" customClass="RoundButton" customModule="M4th_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="78.666666666666671" height="42.333333333333336"/>
+                                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                                <state key="normal" title="9">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="enterSymbol:" destination="K4c-93-wmX" eventType="touchUpInside" id="6F9-vQ-vQ8"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="558-I7-vZc" customClass="RoundButton" customModule="M4th_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="52.333333333333371" width="78.666666666666671" height="42.333333333333343"/>
+                                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                                <state key="normal" title="6">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="enterSymbol:" destination="K4c-93-wmX" eventType="touchUpInside" id="zKA-pY-QCk"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDG-By-Qwd" customClass="RoundButton" customModule="M4th_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="104.66666666666663" width="78.666666666666671" height="42.333333333333343"/>
+                                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                                <state key="normal" title="1">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="enterSymbol:" destination="K4c-93-wmX" eventType="touchUpInside" id="tKQ-Df-5WH"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sGc-JA-2yh">
+                                                        <rect key="frame" x="295.66666666666669" y="0.0" width="78.333333333333314" height="147"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wnr-yM-tbF" customClass="RoundButton" customModule="M4th_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="78.333333333333329" height="68.333333333333329"/>
+                                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                                                <state key="normal" title="-">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="enterSymbol:" destination="K4c-93-wmX" eventType="touchUpInside" id="8SK-9t-IqW"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbS-JT-umV" customClass="RoundButton" customModule="M4th_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="78.333333333333371" width="78.333333333333329" height="68.666666666666686"/>
+                                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="33"/>
+                                                                <state key="normal" title="=">
+                                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="enterResultButton:" destination="K4c-93-wmX" eventType="touchUpInside" id="LRb-HV-gJF"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="NCe-dx-xBe">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="200"/>
+                                            </constraint>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="H91-1j-VTm" firstAttribute="leading" secondItem="U1I-YS-0Zc" secondAttribute="leading" id="6YJ-hC-xgs"/>
+                                    <constraint firstItem="CaP-uL-QsH" firstAttribute="leading" secondItem="U1I-YS-0Zc" secondAttribute="leading" id="aZj-kz-Xb2"/>
+                                    <constraint firstItem="CaP-uL-QsH" firstAttribute="trailing" secondItem="U1I-YS-0Zc" secondAttribute="trailing" id="keG-ye-8H7"/>
+                                    <constraint firstItem="H91-1j-VTm" firstAttribute="trailing" secondItem="U1I-YS-0Zc" secondAttribute="trailing" id="wIW-di-FJI"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KLa-GG-JIE" firstAttribute="bottom" secondItem="U1I-YS-0Zc" secondAttribute="bottom" constant="20" id="9vP-DF-jQp"/>
+                            <constraint firstItem="U1I-YS-0Zc" firstAttribute="top" secondItem="KLa-GG-JIE" secondAttribute="top" constant="20" id="PlH-Hl-tuT"/>
+                            <constraint firstItem="KLa-GG-JIE" firstAttribute="trailing" secondItem="U1I-YS-0Zc" secondAttribute="trailing" constant="20" id="lzM-Os-6df"/>
+                            <constraint firstItem="U1I-YS-0Zc" firstAttribute="leading" secondItem="KLa-GG-JIE" secondAttribute="leading" constant="20" id="p4B-To-FQP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KLa-GG-JIE"/>
+                    </view>
+                    <connections>
+                        <outlet property="ceroButton" destination="X3M-iJ-xN0" id="Ffq-gx-BD4"/>
+                        <outlet property="checkLabelPosition" destination="TgK-TS-rob" id="d3v-ge-Ykl"/>
+                        <outlet property="checkedLabel" destination="1Rk-8t-dRX" id="52S-Ja-AF3"/>
+                        <outlet property="eightButton" destination="mKN-ST-OFo" id="lMd-sI-u82"/>
+                        <outlet property="enterButton" destination="KbS-JT-umV" id="6Ag-Ba-3uF"/>
+                        <outlet property="eraseButton" destination="k80-xy-zf9" id="Yzm-sN-HMb"/>
+                        <outlet property="fiveButton" destination="Gei-Ze-xgQ" id="Km5-yk-Fpk"/>
+                        <outlet property="fourButton" destination="mTm-BO-lPt" id="kUg-ab-xpp"/>
+                        <outlet property="mainStack" destination="U1I-YS-0Zc" id="7xc-KU-Es6"/>
+                        <outlet property="minusButton" destination="Wnr-yM-tbF" id="JqW-PJ-ZJK"/>
+                        <outlet property="nineButton" destination="zyD-cd-ahL" id="M63-tm-HgL"/>
+                        <outlet property="oneButton" destination="Gco-Sj-jRd" id="I6p-aE-JgT"/>
+                        <outlet property="operationLabel" destination="gYj-Tv-7qr" id="qed-vY-qoA"/>
+                        <outlet property="scoreLabel" destination="lM0-re-wAS" id="FPX-jo-N5T"/>
+                        <outlet property="sevenButton" destination="HvL-EI-0nx" id="gTT-iI-n5b"/>
+                        <outlet property="sixButton" destination="558-I7-vZc" id="E7A-Hs-Qj6"/>
+                        <outlet property="threeButton" destination="XDG-By-Qwd" id="WXs-6H-poj"/>
+                        <outlet property="timeLeftLabel" destination="urN-gN-6Tc" id="m1u-1Y-Hy9"/>
+                        <outlet property="topElementsStack" destination="CaP-uL-QsH" id="odM-DM-xaJ"/>
+                        <outlet property="twoButton" destination="GPx-AB-gn0" id="dXh-gA-dtW"/>
+                        <outletCollection property="symbolInputCollection" destination="X3M-iJ-xN0" collectionClass="NSMutableArray" id="Een-5t-BI7"/>
+                        <outletCollection property="symbolInputCollection" destination="HvL-EI-0nx" collectionClass="NSMutableArray" id="wb0-wT-60z"/>
+                        <outletCollection property="symbolInputCollection" destination="mKN-ST-OFo" collectionClass="NSMutableArray" id="lTc-Yu-6Rw"/>
+                        <outletCollection property="symbolInputCollection" destination="zyD-cd-ahL" collectionClass="NSMutableArray" id="n6M-tV-AZp"/>
+                        <outletCollection property="symbolInputCollection" destination="Wnr-yM-tbF" collectionClass="NSMutableArray" id="ocU-AL-MQY"/>
+                        <outletCollection property="symbolInputCollection" destination="558-I7-vZc" collectionClass="NSMutableArray" id="CfZ-BE-fYB"/>
+                        <outletCollection property="symbolInputCollection" destination="Gei-Ze-xgQ" collectionClass="NSMutableArray" id="k5k-ke-etb"/>
+                        <outletCollection property="symbolInputCollection" destination="mTm-BO-lPt" collectionClass="NSMutableArray" id="okI-G2-dI8"/>
+                        <outletCollection property="symbolInputCollection" destination="Gco-Sj-jRd" collectionClass="NSMutableArray" id="Tof-wO-KYu"/>
+                        <outletCollection property="symbolInputCollection" destination="GPx-AB-gn0" collectionClass="NSMutableArray" id="GNn-5O-iuV"/>
+                        <outletCollection property="symbolInputCollection" destination="XDG-By-Qwd" collectionClass="NSMutableArray" id="Cyu-Y8-ek8"/>
+                        <outletCollection property="symbolInputCollection" destination="KbS-JT-umV" collectionClass="NSMutableArray" id="BdT-lQ-4VG"/>
+                        <segue destination="n1r-Xs-d6n" kind="show" identifier="GameOver" customClass="masterSegueClass" customModule="M4th_Game" customModuleProvider="target" id="Kbc-JZ-cuf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qv8-ys-v9x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="630.80357142857144" y="-265.21739130434787"/>
+        </scene>
+        <!--Score View Controller-->
+        <scene sceneID="5kR-Zl-idO">
+            <objects>
+                <viewController id="n1r-Xs-d6n" customClass="ScoreViewController" customModule="M4th_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Byc-ZI-bcJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="D4t-yP-0gP">
+                                <rect key="frame" x="20" y="40" width="374" height="676"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asB-lJ-qyV">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Tvw-9M-6nk">
+                                                <variation key="heightClass=compact-widthClass=regular" constant="40"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hkc-R7-m34">
+                                        <rect key="frame" x="0.0" y="40" width="374" height="636"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihH-VK-BLZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="240"/>
+                                                <subviews>
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fFb-DC-sSx">
+                                                        <rect key="frame" x="0.0" y="40" width="374" height="200"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="600" id="dut-Im-M9J"/>
+                                                        </constraints>
+                                                        <color key="separatorColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <prototypes>
+                                                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="resultCell" rowHeight="50" id="4kO-lp-x1Y" customClass="CustomCell" customModule="M4th_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="28" width="374" height="50"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4kO-lp-x1Y" id="UBO-LN-eeC">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="49.666666666666664"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nq2-Ok-WmU">
+                                                                            <rect key="frame" x="216" y="0.0" width="40" height="49.666666666666664"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="40" id="Ndw-UG-Sby"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstItem="Nq2-Ok-WmU" firstAttribute="centerY" secondItem="UBO-LN-eeC" secondAttribute="centerY" id="I6k-pA-yJz"/>
+                                                                        <constraint firstAttribute="trailingMargin" secondItem="Nq2-Ok-WmU" secondAttribute="trailing" id="MXC-0N-seh"/>
+                                                                        <constraint firstItem="Nq2-Ok-WmU" firstAttribute="height" secondItem="UBO-LN-eeC" secondAttribute="height" id="lqU-Kl-hJZ"/>
+                                                                    </constraints>
+                                                                </tableViewCellContentView>
+                                                                <connections>
+                                                                    <outlet property="correctLabel" destination="Nq2-Ok-WmU" id="yQa-wE-tHU"/>
+                                                                </connections>
+                                                            </tableViewCell>
+                                                        </prototypes>
+                                                    </tableView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="fFb-DC-sSx" firstAttribute="top" secondItem="ihH-VK-BLZ" secondAttribute="top" constant="40" id="Up3-Xh-ike"/>
+                                                    <constraint firstItem="fFb-DC-sSx" firstAttribute="bottom" secondItem="ihH-VK-BLZ" secondAttribute="bottom" id="Yz3-vs-tHz"/>
+                                                    <constraint firstItem="fFb-DC-sSx" firstAttribute="trailing" secondItem="ihH-VK-BLZ" secondAttribute="trailing" id="gqB-OT-jLD"/>
+                                                    <constraint firstItem="fFb-DC-sSx" firstAttribute="leading" secondItem="ihH-VK-BLZ" secondAttribute="leading" id="uCv-RA-qRS"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5YI-hl-ikr">
+                                                <rect key="frame" x="0.0" y="260" width="374" height="376"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Final score: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W1u-Je-9O6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="07d-6b-0UK"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="26"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct answers:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="80V-YW-6cq">
+                                                        <rect key="frame" x="0.0" y="170.66666666666669" width="374" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="kiL-CG-3yn"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="26"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KTJ-ja-I8c">
+                                                        <rect key="frame" x="0.0" y="336" width="374" height="40"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8d-Av-XzV" customClass="RoundButton" customModule="M4th_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="177" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="1mV-qH-Ab9"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                                                <state key="normal" title="Play Again">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="playAgainButton:" destination="n1r-Xs-d6n" eventType="touchUpInside" id="QET-6k-lho"/>
+                                                                    <segue destination="K4c-93-wmX" kind="custom" identifier="RightToLeft" customClass="masterSegueClass" customModule="M4th_Game" customModuleProvider="target" id="oyQ-5L-hx7"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FrX-KH-c4l" customClass="RoundButton" customModule="M4th_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="197" y="0.0" width="177" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="Nul-ox-YdV"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                                                <state key="normal" title="Main menu">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="menuButton:" destination="n1r-Xs-d6n" eventType="touchUpInside" id="raA-kR-8JK"/>
+                                                                    <segue destination="BYZ-38-t0r" kind="custom" identifier="LeftToRight" customClass="masterSegueClass" customModule="M4th_Game" customModuleProvider="target" id="aI3-3J-yjk"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="KTJ-ja-I8c" secondAttribute="trailing" id="rIU-O1-JHr"/>
+                                                    <constraint firstItem="KTJ-ja-I8c" firstAttribute="leading" secondItem="5YI-hl-ikr" secondAttribute="leading" id="yYR-af-7C2"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <variation key="heightClass=compact-widthClass=compact" axis="horizontal" distribution="fillEqually"/>
+                                        <variation key="heightClass=compact-widthClass=regular" axis="horizontal" distribution="fillEqually"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="asB-lJ-qyV" firstAttribute="centerX" secondItem="D4t-yP-0gP" secondAttribute="centerX" id="2LK-GG-yVJ"/>
+                                    <constraint firstItem="hkc-R7-m34" firstAttribute="leading" secondItem="D4t-yP-0gP" secondAttribute="leading" id="sHL-79-DMN"/>
+                                    <constraint firstAttribute="trailing" secondItem="hkc-R7-m34" secondAttribute="trailing" id="taN-bv-auJ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D4t-yP-0gP" firstAttribute="top" secondItem="v8b-Kr-2Pn" secondAttribute="top" constant="20" id="IsT-c2-gKQ"/>
+                            <constraint firstItem="v8b-Kr-2Pn" firstAttribute="bottom" secondItem="D4t-yP-0gP" secondAttribute="bottom" constant="20" id="Pfv-lE-slf"/>
+                            <constraint firstItem="v8b-Kr-2Pn" firstAttribute="trailing" secondItem="D4t-yP-0gP" secondAttribute="trailing" constant="20" id="ayU-oc-qp1"/>
+                            <constraint firstItem="D4t-yP-0gP" firstAttribute="leading" secondItem="v8b-Kr-2Pn" secondAttribute="leading" constant="20" id="wD1-li-ls6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v8b-Kr-2Pn"/>
+                    </view>
+                    <connections>
+                        <outlet property="correctAnswersLabel" destination="80V-YW-6cq" id="3fw-Vx-0Ep"/>
+                        <outlet property="resultTable" destination="fFb-DC-sSx" id="TrS-at-vEN"/>
+                        <outlet property="scoreLabel" destination="W1u-Je-9O6" id="j2m-28-kDu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gM7-LE-yKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="199" y="-1001"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Gus-nz-A8e"/>
+        <segue reference="8lc-4o-xDa"/>
+    </inferredMetricsTieBreakers>
+</document>

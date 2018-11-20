@@ -1,0 +1,144 @@
+
+/* Class = "UIButton"; normalTitle = "▷"; ObjectID = "3Fi-NJ-bHU"; */
+"3Fi-NJ-bHU.normalTitle" = "▷";
+
+/* Class = "UIButton"; normalTitle = "6"; ObjectID = "558-I7-vZc"; */
+"558-I7-vZc.normalTitle" = "6";
+
+/* Class = "UILabel"; text = "Sonidos"; ObjectID = "6OA-Cx-FFH"; */
+"6OA-Cx-FFH.text" = "Sounds";
+
+/* Class = "UILabel"; text = "Correct answers:"; ObjectID = "80V-YW-6cq"; */
+"80V-YW-6cq.text" = "Correct answers:";
+
+/* Class = "UIButton"; normalTitle = "!"; ObjectID = "99r-la-jJU"; */
+"99r-la-jJU.normalTitle" = "!";
+
+/* Class = "UIButton"; normalTitle = "Puntuaciones"; ObjectID = "EwU-zD-IQB"; */
+"EwU-zD-IQB.normalTitle" = "Scores";
+
+/* Class = "UIButton"; normalTitle = "Main menu"; ObjectID = "FrX-KH-c4l"; */
+"FrX-KH-c4l.normalTitle" = "Main menu";
+
+/* Class = "UIButton"; normalTitle = "Opciones"; ObjectID = "GET-YG-boA"; */
+"GET-YG-boA.normalTitle" = "Options";
+
+/* Class = "UIButton"; normalTitle = "2"; ObjectID = "GPx-AB-gn0"; */
+"GPx-AB-gn0.normalTitle" = "2";
+
+/* Class = "UIButton"; normalTitle = "3"; ObjectID = "Gco-Sj-jRd"; */
+"Gco-Sj-jRd.normalTitle" = "3";
+
+/* Class = "UIButton"; normalTitle = "5"; ObjectID = "Gei-Ze-xgQ"; */
+"Gei-Ze-xgQ.normalTitle" = "5";
+
+/* Class = "UIButton"; normalTitle = "7"; ObjectID = "HvL-EI-0nx"; */
+"HvL-EI-0nx.normalTitle" = "7";
+
+/* Class = "UIButton"; normalTitle = "Volver"; ObjectID = "JEe-Y8-1RZ"; */
+"JEe-Y8-1RZ.normalTitle" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Remove all ads! (1$)"; ObjectID = "Jta-zg-WEL"; */
+"Jta-zg-WEL.normalTitle" = "Remove all ads! (1$)";
+
+/* Class = "UIButton"; normalTitle = "Volver"; ObjectID = "KOS-NJ-U1r"; */
+"KOS-NJ-U1r.normalTitle" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Volver"; ObjectID = "Kac-sh-MhN"; */
+"Kac-sh-MhN.normalTitle" = "Back";
+
+/* Class = "UIButton"; normalTitle = "="; ObjectID = "KbS-JT-umV"; */
+"KbS-JT-umV.normalTitle" = "=";
+
+/* Class = "UISegmentedControl"; MnA-tG-V0b.segmentTitles[0] = "Blanco"; ObjectID = "MnA-tG-V0b"; */
+"MnA-tG-V0b.segmentTitles[0]" = "White";
+
+/* Class = "UISegmentedControl"; MnA-tG-V0b.segmentTitles[1] = "Vainilla"; ObjectID = "MnA-tG-V0b"; */
+"MnA-tG-V0b.segmentTitles[1]" = "Vanilla";
+
+/* Class = "UISegmentedControl"; MnA-tG-V0b.segmentTitles[2] = "Rosa"; ObjectID = "MnA-tG-V0b"; */
+"MnA-tG-V0b.segmentTitles[2]" = "Pink";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "Nq2-Ok-WmU"; */
+"Nq2-Ok-WmU.text" = "0";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "TO5-80-L5G"; */
+"TO5-80-L5G.text" = "Label";
+
+/* Class = "UILabel"; text = "Idioma"; ObjectID = "VeU-Mw-LXz"; */
+"VeU-Mw-LXz.text" = "Language";
+
+/* Class = "UILabel"; text = "Final score: "; ObjectID = "W1u-Je-9O6"; */
+"W1u-Je-9O6.text" = "Final score: ";
+
+/* Class = "UIButton"; normalTitle = "-"; ObjectID = "Wnr-yM-tbF"; */
+"Wnr-yM-tbF.normalTitle" = "-";
+
+/* Class = "UIButton"; normalTitle = "0"; ObjectID = "X3M-iJ-xN0"; */
+"X3M-iJ-xN0.normalTitle" = "0";
+
+/* Class = "UIButton"; normalTitle = "1"; ObjectID = "XDG-By-Qwd"; */
+"XDG-By-Qwd.normalTitle" = "1";
+
+/* Class = "UISegmentedControl"; ZBc-pc-FRd.segmentTitles[0] = "Fácil"; ObjectID = "ZBc-pc-FRd"; */
+"ZBc-pc-FRd.segmentTitles[0]" = "Easy";
+
+/* Class = "UISegmentedControl"; ZBc-pc-FRd.segmentTitles[1] = "Normal"; ObjectID = "ZBc-pc-FRd"; */
+"ZBc-pc-FRd.segmentTitles[1]" = "Normal";
+
+/* Class = "UISegmentedControl"; ZBc-pc-FRd.segmentTitles[2] = "Difícil"; ObjectID = "ZBc-pc-FRd"; */
+"ZBc-pc-FRd.segmentTitles[2]" = "Hard";
+
+/* Class = "UILabel"; text = "Opciones"; ObjectID = "al1-TS-85a"; */
+"al1-TS-85a.text" = "Options";
+
+/* Class = "UILabel"; text = "Results"; ObjectID = "asB-lJ-qyV"; */
+"asB-lJ-qyV.text" = "Results";
+
+/* Class = "UISegmentedControl"; g0C-gP-rWQ.segmentTitles[0] = "Español"; ObjectID = "g0C-gP-rWQ"; */
+"g0C-gP-rWQ.segmentTitles[0]" = "Spanish";
+
+/* Class = "UISegmentedControl"; g0C-gP-rWQ.segmentTitles[1] = "Inglés"; ObjectID = "g0C-gP-rWQ"; */
+"g0C-gP-rWQ.segmentTitles[1]" = "English";
+
+/* Class = "UILabel"; text = " "; ObjectID = "gYj-Tv-7qr"; */
+"gYj-Tv-7qr.text" = " ";
+
+/* Class = "UIButton"; normalTitle = "Play Again"; ObjectID = "h8d-Av-XzV"; */
+"h8d-Av-XzV.normalTitle" = "Play Again";
+
+/* Class = "UILabel"; text = "M4th Ru5h"; ObjectID = "i4q-X6-esc"; */
+"i4q-X6-esc.text" = "M4th Ru5h";
+
+/* Class = "UIButton"; normalTitle = "⌫"; ObjectID = "k80-xy-zf9"; */
+"k80-xy-zf9.normalTitle" = "⌫";
+
+/* Class = "UILabel"; text = "Score: 0"; ObjectID = "lM0-re-wAS"; */
+"lM0-re-wAS.text" = "Score: 0";
+
+/* Class = "UIButton"; normalTitle = "8"; ObjectID = "mKN-ST-OFo"; */
+"mKN-ST-OFo.normalTitle" = "8";
+
+/* Class = "UIButton"; normalTitle = "4"; ObjectID = "mTm-BO-lPt"; */
+"mTm-BO-lPt.normalTitle" = "4";
+
+/* Class = "UILabel"; text = "Acerca de esta aplicación"; ObjectID = "q5D-y3-hpz"; */
+"q5D-y3-hpz.text" = "About this app";
+
+/* Class = "UITextView"; text = "Developed by: Sartorius Studios. If you liked the app and want to support our job, consider removing ads for a low price using the button below."; ObjectID = "s58-Vc-c0O"; */
+"s58-Vc-c0O.text" = "Developed by: Sartorius Studios. If you liked the app and want to support my job, consider removing ads for a low price using the button below.";
+
+/* Class = "UILabel"; text = "Mejores puntuaciones"; ObjectID = "uC9-wf-a2A"; */
+"uC9-wf-a2A.text" = "Best scores";
+
+/* Class = "UILabel"; text = "120"; ObjectID = "urN-gN-6Tc"; */
+"urN-gN-6Tc.text" = "120";
+
+/* Class = "UILabel"; text = "Tema"; ObjectID = "wvm-nd-OH2"; */
+"wvm-nd-OH2.text" = "Theme";
+
+/* Class = "UILabel"; text = "Dificultad"; ObjectID = "zjm-yy-lhG"; */
+"zjm-yy-lhG.text" = "Difficulty";
+
+/* Class = "UIButton"; normalTitle = "9"; ObjectID = "zyD-cd-ahL"; */
+"zyD-cd-ahL.normalTitle" = "9";

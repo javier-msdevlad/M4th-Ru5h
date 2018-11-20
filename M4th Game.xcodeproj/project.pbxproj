@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B0322CE211A8322004126CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0322CD211A8322004126CE /* AppDelegate.swift */; };
+		3B0322D0211A8322004126CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0322CF211A8322004126CE /* ViewController.swift */; };
+		3B0322D3211A8322004126CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0322D1211A8322004126CE /* Main.storyboard */; };
+		3B0322D6211A8322004126CE /* M4th_Game.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B0322D4211A8322004126CE /* M4th_Game.xcdatamodeld */; };
+		3B0322D8211A8323004126CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0322D7211A8323004126CE /* Assets.xcassets */; };
+		3B0322DB211A8323004126CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0322D9211A8323004126CE /* LaunchScreen.storyboard */; };
+		3B0322E6211A88B8004126CE /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0322E5211A88B8004126CE /* Expression.swift */; };
+		3B09B2C02155AE0A0042BACF /* masterSegueClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B09B2BF2155AE0A0042BACF /* masterSegueClass.swift */; };
+		3B09B2C22155D6880042BACF /* ViewControllerIdentityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B09B2C12155D6880042BACF /* ViewControllerIdentityViewController.swift */; };
+		3B15FD6121377A90009351E1 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15FD6021377A90009351E1 /* CustomCell.swift */; };
+		3B1AFCCC2139F7FB00A126A5 /* chalk1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3B1AFCCB2139F7FB00A126A5 /* chalk1.wav */; };
+		3B265A53215437A300121D1D /* inc.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3B265A52215437A300121D1D /* inc.wav */; };
+		3B265A55215438AC00121D1D /* correct.aif in Resources */ = {isa = PBXBuildFile; fileRef = 3B2B5FDF21542C0A00B80DB4 /* correct.aif */; };
+		3B333910213DC2DB00AD8647 /* Score+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B33390E213DC2DB00AD8647 /* Score+CoreDataClass.swift */; };
+		3B333911213DC2DB00AD8647 /* Score+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B33390F213DC2DB00AD8647 /* Score+CoreDataProperties.swift */; };
+		3B7830EE2122444500231789 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7830ED2122444500231789 /* RoundButton.swift */; };
+		3BA3C055218779F4001CA13D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BA3C053218779F4001CA13D /* Localizable.strings */; };
+		3BAC7852215494C200BE779C /* wrong.aif in Resources */ = {isa = PBXBuildFile; fileRef = 3BAC7851215494B200BE779C /* wrong.aif */; };
+		3BAD4FD7211E4A69006FF68C /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAD4FD6211E4A69006FF68C /* PlayViewController.swift */; };
+		3BAD4FD9211E4A81006FF68C /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAD4FD8211E4A81006FF68C /* OptionsViewController.swift */; };
+		3BAD4FDB211E4A9B006FF68C /* BestScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAD4FDA211E4A9B006FF68C /* BestScoresViewController.swift */; };
+		3BAD4FDD211E4AAB006FF68C /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAD4FDC211E4AAB006FF68C /* ScoreViewController.swift */; };
+		3BAD4FDF211E4ACF006FF68C /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAD4FDE211E4ACF006FF68C /* AboutViewController.swift */; };
+		3BD890AF211BB75E009BE93D /* ExpressionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD890AE211BB75E009BE93D /* ExpressionList.swift */; };
+		3BE2F896214831320018438B /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE2F895214831320018438B /* UserSettings.swift */; };
+		AE3754124305617A4785EF71 /* Pods_M4th_Game.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB4011C8805101BD56A890A5 /* Pods_M4th_Game.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B0322CA211A8322004126CE /* M4th Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "M4th Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B0322CD211A8322004126CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		3B0322CF211A8322004126CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		3B0322D2211A8322004126CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B0322D5211A8322004126CE /* M4th_Game.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = M4th_Game.xcdatamodel; sourceTree = "<group>"; };
+		3B0322D7211A8323004126CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B0322DA211A8323004126CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B0322DC211A8323004126CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B0322E5211A88B8004126CE /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		3B09B2BF2155AE0A0042BACF /* masterSegueClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = masterSegueClass.swift; sourceTree = "<group>"; };
+		3B09B2C12155D6880042BACF /* ViewControllerIdentityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerIdentityViewController.swift; sourceTree = "<group>"; };
+		3B15FD6021377A90009351E1 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomCell.swift; path = Classes/CustomCell.swift; sourceTree = "<group>"; };
+		3B1AFCCB2139F7FB00A126A5 /* chalk1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chalk1.wav; sourceTree = "<group>"; };
+		3B265A52215437A300121D1D /* inc.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = inc.wav; sourceTree = "<group>"; };
+		3B2B5FDF21542C0A00B80DB4 /* correct.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = correct.aif; sourceTree = "<group>"; };
+		3B33390E213DC2DB00AD8647 /* Score+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Score+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3B33390F213DC2DB00AD8647 /* Score+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Score+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3B7830ED2122444500231789 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		3BA3C04D218774FE001CA13D /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Main.strings"; sourceTree = "<group>"; };
+		3BA3C04E218774FE001CA13D /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		3BA3C05221877750001CA13D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		3BA3C054218779F4001CA13D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3BA3C05621877A24001CA13D /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		3BAC7851215494B200BE779C /* wrong.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = wrong.aif; sourceTree = "<group>"; };
+		3BAD4FD6211E4A69006FF68C /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		3BAD4FD8211E4A81006FF68C /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		3BAD4FDA211E4A9B006FF68C /* BestScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestScoresViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		3BAD4FDC211E4AAB006FF68C /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		3BAD4FDE211E4ACF006FF68C /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		3BD890AE211BB75E009BE93D /* ExpressionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionList.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		3BE2F895214831320018438B /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		3C59772BCA14F9841435A0DA /* Pods-M4th Game.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-M4th Game.release.xcconfig"; path = "Pods/Target Support Files/Pods-M4th Game/Pods-M4th Game.release.xcconfig"; sourceTree = "<group>"; };
+		BC5EC1279F0F1B91B7872162 /* Pods-M4th Game.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-M4th Game.debug.xcconfig"; path = "Pods/Target Support Files/Pods-M4th Game/Pods-M4th Game.debug.xcconfig"; sourceTree = "<group>"; };
+		DB4011C8805101BD56A890A5 /* Pods_M4th_Game.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_M4th_Game.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B0322C7211A8322004126CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE3754124305617A4785EF71 /* Pods_M4th_Game.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B0322C1211A8322004126CE = {
+			isa = PBXGroup;
+			children = (
+				3B33390E213DC2DB00AD8647 /* Score+CoreDataClass.swift */,
+				3B33390F213DC2DB00AD8647 /* Score+CoreDataProperties.swift */,
+				3B0322CC211A8322004126CE /* M4th Game */,
+				3B0322CB211A8322004126CE /* Products */,
+				8A3AEEDA44F96409F9209AF5 /* Pods */,
+				6D4FE00B4144E7794E1D2E43 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B0322CB211A8322004126CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B0322CA211A8322004126CE /* M4th Game.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B0322CC211A8322004126CE /* M4th Game */ = {
+			isa = PBXGroup;
+			children = (
+				3B1AFCCA2139F79C00A126A5 /* SoundClips */,
+				3B0322E2211A8822004126CE /* Classes */,
+				3B0322CD211A8322004126CE /* AppDelegate.swift */,
+				3B0322CF211A8322004126CE /* ViewController.swift */,
+				3BAD4FD6211E4A69006FF68C /* PlayViewController.swift */,
+				3BAD4FD8211E4A81006FF68C /* OptionsViewController.swift */,
+				3BAD4FDA211E4A9B006FF68C /* BestScoresViewController.swift */,
+				3BAD4FDC211E4AAB006FF68C /* ScoreViewController.swift */,
+				3BAD4FDE211E4ACF006FF68C /* AboutViewController.swift */,
+				3B0322D1211A8322004126CE /* Main.storyboard */,
+				3B15FD6021377A90009351E1 /* CustomCell.swift */,
+				3B0322D7211A8323004126CE /* Assets.xcassets */,
+				3B0322D9211A8323004126CE /* LaunchScreen.storyboard */,
+				3B0322DC211A8323004126CE /* Info.plist */,
+				3B0322D4211A8322004126CE /* M4th_Game.xcdatamodeld */,
+				3BA3C053218779F4001CA13D /* Localizable.strings */,
+			);
+			path = "M4th Game";
+			sourceTree = "<group>";
+		};
+		3B0322E2211A8822004126CE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3B7830ED2122444500231789 /* RoundButton.swift */,
+				3B0322E5211A88B8004126CE /* Expression.swift */,
+				3BD890AE211BB75E009BE93D /* ExpressionList.swift */,
+				3BE2F895214831320018438B /* UserSettings.swift */,
+				3B09B2BF2155AE0A0042BACF /* masterSegueClass.swift */,
+				3B09B2C12155D6880042BACF /* ViewControllerIdentityViewController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3B1AFCCA2139F79C00A126A5 /* SoundClips */ = {
+			isa = PBXGroup;
+			children = (
+				3B2B5FDF21542C0A00B80DB4 /* correct.aif */,
+				3B265A52215437A300121D1D /* inc.wav */,
+				3BAC7851215494B200BE779C /* wrong.aif */,
+				3B1AFCCB2139F7FB00A126A5 /* chalk1.wav */,
+			);
+			path = SoundClips;
+			sourceTree = "<group>";
+		};
+		6D4FE00B4144E7794E1D2E43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB4011C8805101BD56A890A5 /* Pods_M4th_Game.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A3AEEDA44F96409F9209AF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC5EC1279F0F1B91B7872162 /* Pods-M4th Game.debug.xcconfig */,
+				3C59772BCA14F9841435A0DA /* Pods-M4th Game.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B0322C9211A8322004126CE /* M4th Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B0322DF211A8323004126CE /* Build configuration list for PBXNativeTarget "M4th Game" */;
+			buildPhases = (
+				91606F722C18B358B829FFEF /* [CP] Check Pods Manifest.lock */,
+				3B0322C6211A8322004126CE /* Sources */,
+				3B0322C7211A8322004126CE /* Frameworks */,
+				3B0322C8211A8322004126CE /* Resources */,
+				EE72E359F2BD607AF65E8483 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "M4th Game";
+			productName = "M4th Game";
+			productReference = 3B0322CA211A8322004126CE /* M4th Game.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B0322C2211A8322004126CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Javier Armando Montenegro Luna";
+				TargetAttributes = {
+					3B0322C9211A8322004126CE = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 3B0322C5211A8322004126CE /* Build configuration list for PBXProject "M4th Game" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"es-419",
+			);
+			mainGroup = 3B0322C1211A8322004126CE;
+			productRefGroup = 3B0322CB211A8322004126CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B0322C9211A8322004126CE /* M4th Game */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B0322C8211A8322004126CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B0322DB211A8323004126CE /* LaunchScreen.storyboard in Resources */,
+				3BAC7852215494C200BE779C /* wrong.aif in Resources */,
+				3B265A53215437A300121D1D /* inc.wav in Resources */,
+				3B1AFCCC2139F7FB00A126A5 /* chalk1.wav in Resources */,
+				3B0322D8211A8323004126CE /* Assets.xcassets in Resources */,
+				3BA3C055218779F4001CA13D /* Localizable.strings in Resources */,
+				3B0322D3211A8322004126CE /* Main.storyboard in Resources */,
+				3B265A55215438AC00121D1D /* correct.aif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		91606F722C18B358B829FFEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-M4th Game-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE72E359F2BD607AF65E8483 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-M4th Game/Pods-M4th Game-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-M4th Game/Pods-M4th Game-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B0322C6211A8322004126CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B333911213DC2DB00AD8647 /* Score+CoreDataProperties.swift in Sources */,
+				3B0322D0211A8322004126CE /* ViewController.swift in Sources */,
+				3BD890AF211BB75E009BE93D /* ExpressionList.swift in Sources */,
+				3B0322D6211A8322004126CE /* M4th_Game.xcdatamodeld in Sources */,
+				3BAD4FD9211E4A81006FF68C /* OptionsViewController.swift in Sources */,
+				3B7830EE2122444500231789 /* RoundButton.swift in Sources */,
+				3B0322CE211A8322004126CE /* AppDelegate.swift in Sources */,
+				3BAD4FDB211E4A9B006FF68C /* BestScoresViewController.swift in Sources */,
+				3B333910213DC2DB00AD8647 /* Score+CoreDataClass.swift in Sources */,
+				3B09B2C22155D6880042BACF /* ViewControllerIdentityViewController.swift in Sources */,
+				3BAD4FD7211E4A69006FF68C /* PlayViewController.swift in Sources */,
+				3B0322E6211A88B8004126CE /* Expression.swift in Sources */,
+				3BAD4FDF211E4ACF006FF68C /* AboutViewController.swift in Sources */,
+				3B15FD6121377A90009351E1 /* CustomCell.swift in Sources */,
+				3BE2F896214831320018438B /* UserSettings.swift in Sources */,
+				3BAD4FDD211E4AAB006FF68C /* ScoreViewController.swift in Sources */,
+				3B09B2C02155AE0A0042BACF /* masterSegueClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3B0322D1211A8322004126CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B0322D2211A8322004126CE /* Base */,
+				3BA3C04D218774FE001CA13D /* es-419 */,
+				3BA3C05221877750001CA13D /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B0322D9211A8323004126CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B0322DA211A8323004126CE /* Base */,
+				3BA3C04E218774FE001CA13D /* es-419 */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3BA3C053218779F4001CA13D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BA3C054218779F4001CA13D /* en */,
+				3BA3C05621877A24001CA13D /* es-419 */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B0322DD211A8323004126CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B0322DE211A8323004126CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B0322E0211A8323004126CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC5EC1279F0F1B91B7872162 /* Pods-M4th Game.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CTC3KB9HXA;
+				INFOPLIST_FILE = "M4th Game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Javier.M4th-Game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B0322E1211A8323004126CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C59772BCA14F9841435A0DA /* Pods-M4th Game.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CTC3KB9HXA;
+				INFOPLIST_FILE = "M4th Game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Javier.M4th-Game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B0322C5211A8322004126CE /* Build configuration list for PBXProject "M4th Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B0322DD211A8323004126CE /* Debug */,
+				3B0322DE211A8323004126CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B0322DF211A8323004126CE /* Build configuration list for PBXNativeTarget "M4th Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B0322E0211A8323004126CE /* Debug */,
+				3B0322E1211A8323004126CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3B0322D4211A8322004126CE /* M4th_Game.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3B0322D5211A8322004126CE /* M4th_Game.xcdatamodel */,
+			);
+			currentVersion = 3B0322D5211A8322004126CE /* M4th_Game.xcdatamodel */;
+			path = M4th_Game.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3B0322C2211A8322004126CE /* Project object */;
+}

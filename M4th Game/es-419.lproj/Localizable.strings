@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  M4th Game
+
+  Created by Javier Armando Montenegro Luna on 10/29/18.
+  Copyright © 2018 Javier Armando Montenegro Luna. All rights reserved.
+*/
+"StartGame" = "Ya!";
+"CurrentScore" = "Puntos";
